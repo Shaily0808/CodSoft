@@ -6,8 +6,9 @@ public class NumberGame {
         Random r= new Random();
         //playAgain loop
         boolean playAgain= true;
-        int totalScore=5;
+        int totalScore;
         while (playAgain) {
+            totalScore=5;
         int randNumber= r.nextInt(100);
         //prompt user
         int totalAttempts = 5;
