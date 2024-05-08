@@ -6,8 +6,7 @@ public class NumberGame {
         Random r= new Random();
         //playAgain loop
         boolean playAgain= true;
-        int totalScore=0;
-        int roundsPlayed=0;
+        int totalScore=5;
         while (playAgain) {
         int randNumber= r.nextInt(100);
         //prompt user
@@ -18,37 +17,30 @@ public class NumberGame {
         System.out.println("\nAttempt " + attempts+ " :Guess a number between 1 and 100");
         int x= sc.nextInt();
         if (x<randNumber) {
-            System.out.println("Your guess was too low.");
+            System.out.println("Your guess was too low");
+            totalScore --;
             if (attempts< totalAttempts) {
             System.out.println("Try again!!");
            }
            else {
-            System.out.println("You have reached the limit of attempts");
-            int score = totalAttempts - attempts ;
-            totalScore += score;
-            roundsPlayed ++;
-            System.out.println("Your score for this round is "+ score);
+            System.out.println("\nYou have reached the limit of attempts\n");
+            System.out.println("Your score for this round is "+ totalScore);
            }
              }
         else if (x>randNumber) {
             System.out.println("Your guess was too high");
+            totalScore --;
             if (attempts< totalAttempts) {
                 System.out.println("Try again!!");
                }
                else {
-                System.out.println("You have reached the limit of attempts");
-                int score = totalAttempts - attempts ;
-                totalScore += score;
-                roundsPlayed ++;
-                System.out.println("Your score for this round is "+ score);
+                System.out.println("\nYou have reached the limit of attempts\n");
+                System.out.println("Your score for this round is "+ totalScore);
             }
             }
             else{
                 System.out.println("Correct guess");
-                int score = totalAttempts - attempts ;
-                totalScore += score;
-                roundsPlayed ++;
-                System.out.println("Your score for this round is "+ score);
+                 System.out.println("Your score for this round is "+ totalScore);
             break;
             }
         }
