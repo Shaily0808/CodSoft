@@ -24,22 +24,22 @@ public class studentGradeCalc {
        System.out.println("Average percentage is: " +  String.format( "%.2f", averagePercentage));
        
        //Grades assigned
-       if (averagePercentage <= 90.00 && averagePercentage <= 100.00) {
+       if (averagePercentage > 91.00 && averagePercentage <= 100.00) {
         System.out.println("Grade: O" );
          }
-         else if (averagePercentage >80.00  && averagePercentage <= 91.00) {
+         else if (averagePercentage >81.00  && averagePercentage <= 91.00) {
             System.out.println("Grade: E");
          }
-         else if (averagePercentage > 70 && averagePercentage <= 81.00) {
+         else if (averagePercentage > 71.00 && averagePercentage <= 81.00) {
             System.out.println("Grade: A");
          }
-         else if (averagePercentage > 60 && averagePercentage <= 71.00) {
+         else if (averagePercentage > 61.00 && averagePercentage <= 71.00) {
             System.out.println("Grade: B");
          }
-         else if (averagePercentage > 50 && averagePercentage <= 61.00) {
+         else if (averagePercentage > 51.00 && averagePercentage <= 61.00) {
             System.out.println("Grade: C");
          }
-         else if (averagePercentage > 40 && averagePercentage <= 51.00) {
+         else if (averagePercentage > 41.00 && averagePercentage <= 51.00) {
             System.out.println("Grade: D");
          }
          else{
